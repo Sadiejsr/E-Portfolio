@@ -1,6 +1,6 @@
 ---
-title: "Your E-Portfolio"
-image: images/Sadie_ProfPhoto.png
+title: "Sadie Russell"
+image: images/Sadie_ProfPhoto.jpg
 about:
   template: trestles
   image-width: 20em

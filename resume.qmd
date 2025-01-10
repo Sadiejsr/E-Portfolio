@@ -4,37 +4,41 @@ title: "Resume"
 
 # Education
 
--   List your education here. 
+**Master of Geomatics for Environmental Management**, University of British Columbia, 2025
+
+**First Class Honours Bachelor of Science in Environmental Science and Statistics**, Dalhousie University, 2024
 
 # Publications
 
-*Peer-reviewed publications:*
-
-- List any peer-reviewed publications here.
-
 *Reports:*
 
-- List any non-peer reviewed materials you'd like to share here.
+Discover Our Climate, MEOPAR and The Discovery Centre, 2023, https://thediscoverycentre.ca/discover-our-climate-decouverte-de-notre-climat/
 
 # Conferences & Talks
 
-*Invited Talks*
-
-- If you've been invited to speak in a professional setting, list that here. 
-
 *Conference Presentations*
 
-- If the presentation was at a conference, list them here. 
-
-# Awards & Honors
-
-- List any scholarships, bursaries, etc. 
+Science Atlantic Environment Conference, University of PEI, 2024 Presenting Thesis: "Halifax Residential Air Quality: Public Perceptions and PM2.5 Concentrations"
 
 
 # Teaching Assistantships
 
-- List any TA positions you may have held. 
+[University of British Columbia]{.underline}
+
+-   CONS 330: Conservation Science and Sustainability (Winter 2 Term, 2025), 3 credits, 139 students
+
+[Dalhousie Univsersity]{.underline}
+
+-   ENVS2500: Field Methods in Environmental Science (Summer 1 Term, 2024), 3 credits, 24 students
+
+-   ENVS1200: Current Environmental Challenges (Winter Term, 2024), 3 credits, 124 students
+
+-   ENVS1100: Foundations of Environmental Science (Fall Term, 2023), 3 credits, 119 students
+
+-   ENVS2100: Environmental Analytics (Fall Term, 2023), 3 credits, 79 students
 
 # Institutional Service
 
-- Volunteering etc. 
+Aquatic Field Technician, Project Watershed/Nature Vancouver, 2024-2025
+
+Writer and Editor, The Discover Centre, Halifax Nova Scotia, 2023
