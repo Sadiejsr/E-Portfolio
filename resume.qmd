@@ -8,9 +8,18 @@ title: "Resume"
 
 **First Class Honours Bachelor of Science in Environmental Science and Statistics**, Dalhousie University, 2024
 
+# Professional Experience
+
+Graduate Research Assistant, University of British Columbia, 2024-2025
+  - Developed methods for assessing undergraduate learning outcomes
+  - Organized and orchestrated 2-day experiment for 130 participants
+  - Analyzed results using Rstudio
+  - Co-authored paper for peer-reviewed publication
+  
+
 # Publications
 
-*Reports:*
+*Reports*
 
 Discover Our Climate, MEOPAR and The Discovery Centre, 2023, https://thediscoverycentre.ca/discover-our-climate-decouverte-de-notre-climat/
 
