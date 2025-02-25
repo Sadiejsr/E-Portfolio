@@ -1,11 +1,75 @@
 ---
-title: "project"
+title: "Projects"
+subtitle: "Recent Research"
 ---
 
-# Aspen serpentine leafminer influence on burn severity and fire size in Notheastern British Columbia
+# Investigation of the Influence of Aspen Serpentine Leaf Miner (Phyllocnistis populiella) on Fire Severity In Trembling Aspen (Populus tremuloides) Dominant Stands in Northeastern British Columbia
 
-# Using Collaborative Board Games in University Climate Education
+```{r}
+library(leaflet)
+library(sf)
+firemap <- read_sf("images/study_fires.shp")
+m <- leaflet(firemap) %>%
+  addTiles() %>%  
+  addPolygons()
+m  
+```
+
+
+# Towards more effective climate pedagogies: Exploring the impact of playing a collaborative board game on systems thinking competence and climate emotions in undergraduate education
+
+The goal of this research project is to evaluate the effectiveness of incorporating a cooperative 
+board game on climate action (Daybreak) to foster systems thinking competence (Wiek et al., 
+2011): the understanding of interrelationships and feedback loops in wicked problems such as 
+climate change and the ability to collectively analyze complex systems across different domains 
+(ecology, technology, economy, social policy) and different scales (local to global). Other 
+learning outcomes such as reduced eco-anxiety and other negative emotions will also be 
+evaluated.
+
+This research is done in under the supervision of Principal Investigator, Dr. Fernanda Tomaselli (University of British Columbia) and Co-Investigator, Dr. Abhirami Senthilkumaran (University of British Columbia), and is partially funded by the CampusBC research fellows program. 
 
 # Halifax Residential Air Quality: Public Perceptions and PM2.5 Concentrations 
 
-# 
+Under the supervision of Dr.Daniel Rainham (Dalhousie University), this honours thesis investigated temporal variation in airborne particulate matter (PM2.5) in Halifax's North End. This thesis was purposed following concerns from local residents regarding local air pollution and it's impacts on quality of life. 
+
+## Abstract
+
+Residents of Halifax's North End have raised concerns over air quality in their
+neighbourhood. Exposure to elevated levels of airborne particulate matter pose serious
+risks to human health and increases strain on local healthcare systems. This study sought
+to quantify local concentrations of PM2.5 and compare them to Canadian Ambient Air
+Quality Standards (CAAQS). Additionally, it aimed to understand public perceptions of
+air quality and sources of pollution within their neighborhood. PM2.5 concentrations were
+collected remotely from the 2600 block of Agricola Street from November 2022 and
+November 2023. A total of 276 usable days were recorded. The observed 24-hour 98th
+percentile PM2.5 average is 50.1 μg/m3 and the annual average is 12.6 μg/m3. Averages
+exceeded the highest CAAQS threshold of both 24-hour and annual averages. Daily trends
+showed that the highest concentrations occurred between 8 am and 6 pm on weekdays
+and showed no variation from the downtown control site on weekends. The highest PM2.5
+concentrations were recorded in the presence of northwesterly winds. A local butcher
+shop and meat smoker to the northwest of the study site, was identified as a likely source
+of the local elevated air pollution A self-selecting, online survey was circulated by mail
+flyer and email. People who live or work within a 200 m radius of the air quality sensor
+were eligible to participate. Participants were asked to rate their perception of local air
+quality trends, level of concern, and perceived sources of pollution. Based on census
+population density, it is estimated that 900 respondents lived within the study area.
+Survey results were based upon 61 usable responses. Respondents to the survey
+confirmed that they perceived the nearby meat smoking operation to be one of the top
+three sources of air pollution within their community. A Posteriori coding of open-ended
+questions yielded numerous sentiments of frustration and reduced quality of life due to
+local air pollution. However, most respondents indicated that they perceived air quality
+to be at least acceptable. Regardless of perception, long-term exposure to elevated PM2.5
+levels pose health risks to the public in the immediate vicinity; especially seniors,
+children, and those with pre-existing medical conditions.
+
+The final copy of this thesis can be found in the Dalhousie University thesis repository:
+---
+format:
+  html:
+    other-links:
+      - text: S. Russell. (2024) Halifax Residential Air Quality
+        href: https://dalspace.library.dal.ca/items/8712558c-3e4c-4596-9c34-e0a29bb0ab45
+        
+---
+
+

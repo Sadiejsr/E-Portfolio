@@ -54,5 +54,19 @@
     "title": "Content & Deliverables",
     "section": "",
     "text": "You can also provide a frame linking to external websites. For example, here is a link to a Google Earth Engine application I developed. The full-screen GEE application is available here in case you’re interested.\n(To use the GEE tool, navigate to any city you’d like, hit apply filters, and click anywhere on the map to retrieve a time-series of Landsat surface temperature observations for that point. Areas where the maximum temp exceeded 35 degrees Celsius in your date-range are highlighted in red.)"
+  },
+  {
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "Projects",
+    "section": "",
+    "text": "library(leaflet)\n\nWarning: package 'leaflet' was built under R version 4.3.3\n\nlibrary(sf)\n\nWarning: package 'sf' was built under R version 4.3.3\n\n\nLinking to GEOS 3.11.2, GDAL 3.8.2, PROJ 9.3.1; sf_use_s2() is TRUE\n\nfiremap &lt;- read_sf(\"images/study_fires.shp\")\nm &lt;- leaflet(firemap) %&gt;%\n  addTiles() %&gt;%  \n  addPolygons()\n\nWarning: sf layer is not long-lat data\n\nm"
+  },
+  {
+    "objectID": "project.html#abstract",
+    "href": "project.html#abstract",
+    "title": "Projects",
+    "section": "Abstract",
+    "text": "Abstract\nResidents of Halifax’s North End have raised concerns over air quality in their neighbourhood. Exposure to elevated levels of airborne particulate matter pose serious risks to human health and increases strain on local healthcare systems. This study sought to quantify local concentrations of PM2.5 and compare them to Canadian Ambient Air Quality Standards (CAAQS). Additionally, it aimed to understand public perceptions of air quality and sources of pollution within their neighborhood. PM2.5 concentrations were collected remotely from the 2600 block of Agricola Street from November 2022 and November 2023. A total of 276 usable days were recorded. The observed 24-hour 98th percentile PM2.5 average is 50.1 μg/m3 and the annual average is 12.6 μg/m3. Averages exceeded the highest CAAQS threshold of both 24-hour and annual averages. Daily trends showed that the highest concentrations occurred between 8 am and 6 pm on weekdays and showed no variation from the downtown control site on weekends. The highest PM2.5 concentrations were recorded in the presence of northwesterly winds. A local butcher shop and meat smoker to the northwest of the study site, was identified as a likely source of the local elevated air pollution A self-selecting, online survey was circulated by mail flyer and email. People who live or work within a 200 m radius of the air quality sensor were eligible to participate. Participants were asked to rate their perception of local air quality trends, level of concern, and perceived sources of pollution. Based on census population density, it is estimated that 900 respondents lived within the study area. Survey results were based upon 61 usable responses. Respondents to the survey confirmed that they perceived the nearby meat smoking operation to be one of the top three sources of air pollution within their community. A Posteriori coding of open-ended questions yielded numerous sentiments of frustration and reduced quality of life due to local air pollution. However, most respondents indicated that they perceived air quality to be at least acceptable. Regardless of perception, long-term exposure to elevated PM2.5 levels pose health risks to the public in the immediate vicinity; especially seniors, children, and those with pre-existing medical conditions.\nThe final copy of this thesis can be found in the Dalhousie University thesis repository:"
   }
 ]
