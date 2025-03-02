@@ -12,12 +12,8 @@ website:
         text: Resume
       - href: project.qmd
         text: Projects
-      - href: content.qmd
-        text: Content & Deliverables
-      - href: fieldwork.qmd
+      - href: fieldworkgallery.qmd
         text: Field Work Gallery
-      - href: publications.qmd
-        text: Publications
 
 format:
   html:
