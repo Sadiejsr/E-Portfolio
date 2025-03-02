@@ -13,9 +13,9 @@ about:
       href: https://github.com/sadiejsr
     - icon: envelope-at
       text: Email
-      href: mailto:sadiejsr@gmail.com
+      href: mailto:sadie.russell@ubc.ca
 ---
 
-Hey there,
+## About me
 
-Welcoming to my e-portfolio. This site is still under construction and will have all my update work shortly. Check back to find my resume and course work, as well as current and past project. In the mean time, please feel free to reach out to me!
+I grew up on the unceded territories of the Musqueam, Squamish and Tsleil-Waututh, commonly referred to as Vancouver, British Columbia and am thrilled to continue to work and learn here. I am a current graduate student at the University of British Columbia in the Master of Geomatics for Environmental Management program. I was drawn to this program as it furthers my ambitions of approaching community-based research topics through the lens remote sensing and environment statistics. I have had the privilege of studying on the unceded territory of the Mi’kmaq, referred to as Halifax, Nova Scotia. I attended Dalhousie University from 2021 to 2024 and completed an Honours BSc in Environmental Science with a minor in Statistics. Returning to the west coast was a priority for me as it is a place that represents family and holds a sense of belonging. I hope to apply the knowledge I gain to the protection and management of British Columbian forests, and empowerment of communities.

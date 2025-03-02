@@ -6,16 +6,33 @@ title: "Resume"
 
 **Master of Geomatics for Environmental Management**, University of British Columbia, 2025
 
+Thesis: “Investigation of the Influence of Aspen Serpentine Lead Miner (Phyllocnistis populiella) on Fire Severity In Trembling Aspen (Populus tremuloides) Dominant Stands in Northeastern British Columbia”
+
+Supervisor: Dr. Allan Carroll
+
 **First Class Honours Bachelor of Science in Environmental Science and Statistics**, Dalhousie University, 2024
+
+Thesis: “Halifax Residential Air Quality; Public Perception and PM2.5 Concentrations” Supervisor: Dr. Daniel Rainham Certificate: Environmental Impact Assessment
 
 # Professional Experience
 
-Graduate Research Assistant, University of British Columbia, 2024-2025
-  - Developed methods for assessing undergraduate learning outcomes
-  - Organized and orchestrated 2-day experiment for 130 participants
-  - Analyzed results using Rstudio
-  - Co-authored paper for peer-reviewed publication
-  
+**Graduate Research Assistant, University of British Columbia, 2024-2025**
+
+\- Developed methods for assessing undergraduate learning outcomes
+
+\- Organized and orchestrated 2-day experiment for 130 participants
+
+\- Analyzed results using Rstudio
+
+**Writer/Editor, The Discovery Centre, Halifax, NS, 2022**
+
+\- Five-month internship through Dalhousie University
+
+\- Developed five educational packages on climate change for Nova Scotian schools
+
+\- Conducted interviews with lead researchers from MEOPAR projects
+
+\- Created and led four workshops for kids aged 8 to 12 to test education packages
 
 # Publications
 
@@ -27,24 +44,25 @@ Discover Our Climate, MEOPAR and The Discovery Centre, 2023, https://thediscover
 
 *Conference Presentations*
 
-Science Atlantic Environment Conference, University of PEI, 2024 Presenting Thesis: "Halifax Residential Air Quality: Public Perceptions and PM2.5 Concentrations"
-
+**S.J. Russell**, 2024, “Halifax Residential Air Quality: Public Perceptions and PM2.5 Concentrations” Science Atlantic Environment Conference, UPEI, Charlottetown, PEI
 
 # Teaching Assistantships
 
-[University of British Columbia]{.underline}
+**Facilitated tutorial sessions and held office hours for the following undergraduate courses:**
 
--   CONS 330: Conservation Science and Sustainability (Winter 2 Term, 2025), 3 credits, 139 students
+**University of British Columbia**
 
-[Dalhousie Univsersity]{.underline}
+Conservation Science and Sustainability (Winter 2 Term, 2025), 3 credits, 139 students
 
--   ENVS2500: Field Methods in Environmental Science (Summer 1 Term, 2024), 3 credits, 24 students
+**Dalhousie University**
 
--   ENVS1200: Current Environmental Challenges (Winter Term, 2024), 3 credits, 124 students
+Current Environmental Challenges (Winter Term, 2024), 3 credits, 124 students Foundations of Environmental Science (Fall Term, 2023), 3 credits, 119 students Environmental Analytics (Fall Term, 2023), 3 credits, 79 students
 
--   ENVS1100: Foundations of Environmental Science (Fall Term, 2023), 3 credits, 119 students
+**Instructed and supervised fieldwork in the following undergraduate course:**
 
--   ENVS2100: Environmental Analytics (Fall Term, 2023), 3 credits, 79 students
+**Dalhousie University**
+
+Field Methods in Environmental Science (Summer 1 Term, 2024), 3 credits, 24 students
 
 # Institutional Service
 
