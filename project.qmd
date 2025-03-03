@@ -75,7 +75,7 @@ g1
 g2
 ```
 
-A random forest regression (ntree = 25) of 13 variables explained 85% of variation in mean differenced normalized burn ratio (dNBR). Aspen serpenine leafminer decreased the total RMSE with 3.5%. The mean dNBR of a cell's eight nearest neighbors (nn_dnbr) was the most influential variables due to the spatial autocorrelation of fire.
+A random forest regression (ntree = 25) of 13 variables explained 85% of variation in mean differenced normalized burn ratio (dNBR). Aspen serpenine leafminer decreased the total RMSE by 3.5%. The mean dNBR of a cell's eight nearest neighbors (nn_dnbr) was the most influential variables due to the spatial autocorrelation of fire.
 
 ```{r, include=FALSE}
 rfm_df <- data.frame(variable = c("ALM", "Elevation", "Tmax_sp", "RH_wt", "PPT_sm", "DD5_sp", "PAS", "mean_slope", "basal_area", "proj_age_1", "species_pc", "nn_dnbr"), MSEprop = c(3.483360642, 4.803928548, 5.127958032, 4.282151979, 5.26434461, 5.059193334, 4.899880186, 5.965286223, 7.404132518, 5.337140795, 4.732095074, 43.64052806))
@@ -95,7 +95,7 @@ g3 <- ggplot(rfm_df, aes(x = reorder(variable, desc(MSEprop)), y=MSEprop)) +
 g3
 ```
 
-While ALM does not have a dominant impact of burn severity, there is evidence that outbreaks may influence fire behavior in the presence of other climate, vegetation and topographic ranges. Further research into singular fire events, where field observation are possible, may garner clearer insights to the influence of ALM on fire in BC.
+While ALM does not have a dominant impact of burn severity, evidence suggests that outbreaks may influence fire behavior in the presence of other climate, vegetation and topographic ranges. Further research into singular fire events, where field observation are possible, may garner clearer insights to the influence of ALM on fire in BC.
 
 # Climate Change Education
 
