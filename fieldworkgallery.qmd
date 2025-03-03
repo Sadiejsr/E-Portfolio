@@ -1,13 +1,12 @@
 ---
-title: "Field Work Gallery"
+title: "My Photo Gallery"
 format: html
 ---
 
 
-A selection of photos from my work in the field in both British Columbia and Nova Scotia. My field work has included extensive backcountry hiking, species identifiaction, teaching field methods, and benthic collection using the Cabin Kick protocol. I have worked in the field in the capacity of researcher, teacher and student.
+A glimpse into my fieldwork adventures across British Columbia and Nova Scotia! From backcountry hiking and species identification to teaching field methods and conducting benthic sampling using the CABIN Kick Protocol, I've worn many hats in the field—as a researcher, teacher, and student. These photos capture some of the incredible landscapes and hands-on experiences that have shaped my work.
 
 
-## My Photo Gallery
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
   <img src="images/sadie_kicknet.jpg" style="width: 45%;">

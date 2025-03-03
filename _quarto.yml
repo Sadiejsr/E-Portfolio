@@ -14,7 +14,6 @@ website:
         text: Projects
       - href: coding.qmd
         text: Skills
-        
       - href: fieldworkgallery.qmd
         text: Field Work Gallery
 

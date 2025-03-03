@@ -70,7 +70,7 @@ g2 <- ggplot() +
         legend.position = "right")
 ```
 
-```{r}
+```{r, warning=FALSE}
 g1
 g2
 ```

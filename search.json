@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Sadie Russell",
     "section": "",
-    "text": "I grew up on the unceded territories of the Musqueam, Squamish and Tsleil-Waututh, commonly referred to as Vancouver, British Columbia and am thrilled to continue to work and learn here. I am a current graduate student at the University of British Columbia in the Master of Geomatics for Environmental Management program. I was drawn to this program as it furthers my ambitions of approaching community-based research topics through the lens remote sensing and environment statistics. I have had the privilege of studying on the unceded territory of the Mi’kmaq, referred to as Halifax, Nova Scotia. I attended Dalhousie University from 2021 to 2024 and completed an Honours BSc in Environmental Science with a minor in Statistics. Returning to the west coast was a priority for me as it is a place that represents family and holds a sense of belonging. I hope to apply the knowledge I gain to the protection and management of British Columbian forests, and empowerment of communities."
+    "text": "I grew up on the unceded territories of the Musqueam, Squamish, and Tsleil-Waututh, commonly known as Vancouver, and I’m excited to continue my work and studies here. I am currently pursuing a Master’s in Geomatics for Environmental Management at the University of British Columbia, following an Honours BSc in Environmental Science with a Statistics minor from Dalhousie University. Returning to the West Coast feels like home, and I am passionate about applying my skills in remote sensing and environmental statistics to support forest protection and community empowerment in British Columbia.\nWhen I’m not in the lab, you can find me kayaking Deep Cove, hiking Lynn Valley, or crocheting at home."
   },
   {
     "objectID": "resume.html",
@@ -60,7 +60,7 @@
     "href": "project.html",
     "title": "Projects",
     "section": "",
-    "text": "Investigation of the Influence of Aspen Serpentine Leaf Miner (Phyllocnistis populiella) on Fire Severity In Trembling Aspen (Populus tremuloides) Dominant Stands in Northeastern British Columbia\nThis research is a preliminary investigation into how a known defoliator species, aspen serpentine leafminer (ALM), may impact the ability of trembling aspen stands to serve as a barrier against fire movement. While trembling aspen and ALM are found across British Columbia, the north eastern corner of the province was selected for its homogenous eco-region, cliamte, and topography.\nA total of 10326 cells (200mx200m) were identified as locations of fire events in trembling aspen dominant stands. ALM was present in 21% of the final trembling aspen dominant burn cells.\n\ng1\n\nWarning: The dot-dot notation (`..level..`) was deprecated in ggplot2 3.4.0.\nℹ Please use `after_stat(level)` instead.\n\n\n\n\n\n\n\n\ng2\n\n\n\n\n\n\n\n\nA random forest regression (ntree = 25) of 13 variables explained 85% of variation in mean differenced normalized burn ratio (dNBR). Aspen serpenine leafminer decreased the total RMSE with 3.5%. The mean dNBR of a cell’s eight nearest neighbors (nn_dnbr) was the most influential variables due to the spatial autocorrelation of fire.\n\ng3\n\n\n\n\n\n\n\n\nWhile ALM does not have a dominant impact of burn severity, there is evidence that outbreaks may influence fire behavior in the presence of other climate, vegetation and topographic ranges. Further research into singular fire events, where field observation are possible, may garner clearer insights to the influence of ALM on fire in BC."
+    "text": "Investigation of the Influence of Aspen Serpentine Leaf Miner (Phyllocnistis populiella) on Fire Severity In Trembling Aspen (Populus tremuloides) Dominant Stands in Northeastern British Columbia\nThis research is a preliminary investigation into how a known defoliator species, aspen serpentine leafminer (ALM), may impact the ability of trembling aspen stands to serve as a barrier against fire movement. While trembling aspen and ALM are found across British Columbia, the north eastern corner of the province was selected for its homogenous eco-region, cliamte, and topography.\nA total of 10326 cells (200mx200m) were identified as locations of fire events in trembling aspen dominant stands. ALM was present in 21% of the final trembling aspen dominant burn cells.\n\ng1\n\n\n\n\n\n\n\ng2\n\n\n\n\n\n\n\n\nA random forest regression (ntree = 25) of 13 variables explained 85% of variation in mean differenced normalized burn ratio (dNBR). Aspen serpenine leafminer decreased the total RMSE with 3.5%. The mean dNBR of a cell’s eight nearest neighbors (nn_dnbr) was the most influential variables due to the spatial autocorrelation of fire.\n\ng3\n\n\n\n\n\n\n\n\nWhile ALM does not have a dominant impact of burn severity, there is evidence that outbreaks may influence fire behavior in the presence of other climate, vegetation and topographic ranges. Further research into singular fire events, where field observation are possible, may garner clearer insights to the influence of ALM on fire in BC."
   },
   {
     "objectID": "project.html#abstract",
@@ -74,21 +74,21 @@
     "href": "index.html#about-me",
     "title": "Sadie Russell",
     "section": "",
-    "text": "I grew up on the unceded territories of the Musqueam, Squamish and Tsleil-Waututh, commonly referred to as Vancouver, British Columbia and am thrilled to continue to work and learn here. I am a current graduate student at the University of British Columbia in the Master of Geomatics for Environmental Management program. I was drawn to this program as it furthers my ambitions of approaching community-based research topics through the lens remote sensing and environment statistics. I have had the privilege of studying on the unceded territory of the Mi’kmaq, referred to as Halifax, Nova Scotia. I attended Dalhousie University from 2021 to 2024 and completed an Honours BSc in Environmental Science with a minor in Statistics. Returning to the west coast was a priority for me as it is a place that represents family and holds a sense of belonging. I hope to apply the knowledge I gain to the protection and management of British Columbian forests, and empowerment of communities."
+    "text": "I grew up on the unceded territories of the Musqueam, Squamish, and Tsleil-Waututh, commonly known as Vancouver, and I’m excited to continue my work and studies here. I am currently pursuing a Master’s in Geomatics for Environmental Management at the University of British Columbia, following an Honours BSc in Environmental Science with a Statistics minor from Dalhousie University. Returning to the West Coast feels like home, and I am passionate about applying my skills in remote sensing and environmental statistics to support forest protection and community empowerment in British Columbia.\nWhen I’m not in the lab, you can find me kayaking Deep Cove, hiking Lynn Valley, or crocheting at home."
   },
   {
     "objectID": "fieldworkgallery.html",
     "href": "fieldworkgallery.html",
     "title": "Field Work Gallery",
     "section": "",
-    "text": "A selection of photos from my work in the field in both British Columbia and Nova Scotia. My field work has included extensive backcountry hiking, species identifiaction, teaching field methods, and benthic collection using the Cabin Kick protocol. I have worked in the field in the capacity of researcher, teacher and student."
+    "text": "A glimpse into my fieldwork adventures across British Columbia and Nova Scotia! From backcountry hiking and species identification to teaching field methods and conducting benthic sampling using the CABIN Kick Protocol, I’ve worn many hats in the field—as a researcher, teacher, and student. These photos capture some of the incredible landscapes and hands-on experiences that have shaped my work."
   },
   {
     "objectID": "fieldworkgallery.html#my-photo-gallery",
     "href": "fieldworkgallery.html#my-photo-gallery",
     "title": "Field Work Gallery",
-    "section": "My Photo Gallery",
-    "text": "My Photo Gallery"
+    "section": "",
+    "text": "A glimpse into my fieldwork adventures across British Columbia and Nova Scotia! From backcountry hiking and species identification to teaching field methods and conducting benthic sampling using the CABIN Kick Protocol, I’ve worn many hats in the field—as a researcher, teacher, and student. These photos capture some of the incredible landscapes and hands-on experiences that have shaped my work."
   },
   {
     "objectID": "coding.html",
