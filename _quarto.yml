@@ -12,8 +12,12 @@ website:
         text: Resume
       - href: project.qmd
         text: Projects
+      - href: coding.qmd
+        text: Skills
+        
       - href: fieldworkgallery.qmd
         text: Field Work Gallery
+
 
 format:
   html:

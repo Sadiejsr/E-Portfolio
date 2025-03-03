@@ -1,0 +1,184 @@
+---
+title: "Skills"
+format: html
+editor: visual
+---
+
+At UBC, I've honed my skills in R, Python, and GIS software to tackle complex data processing and geospatial analysis challenges. From wrangling massive datasets to mapping ecological patterns, I love using code to turn raw data into meaningful insights. Below are a few examples of my work that showcase how I apply these tools to real-world environmental problems.
+
+# Python
+
+My research into forest disturbance ecology relied heavily on the Aerial Overview Surveys produced by the BC Government. These data are available as geodatabases which are best handled using Python. This Python script processes spatial data using ArcPy by setting up a workspace, filtering VRI polygons based on the attribute for aspen serpentine leafminer (FHF), and saving the results to a new shapefile. It also performs an intersection analysis between vegetation data and a study area to extract relevant features for further analysis.
+
+```         
+# Python script for filtering vegetation data and spatial analysis
+import os
+import arcpy
+
+# Set the directory path where the data is stored
+data_dir_path = r"path/to/working/directory"
+print(f"Data Directory: {data_dir_path}")
+
+# Set ArcPy workspace to a specific geodatabase
+arcpy.env.workspace = os.path.join(data_dir_path, "veg_comp_2010.gdb")
+
+# Allow overwriting of outputs
+arcpy.env.overwriteOutput = True
+
+# Define a scratch workspace for temporary files
+scratch_gdb_fpath = os.path.join(data_dir_path, "scratch.gdb")
+print(f"Scratch Geodatabase Path: {scratch_gdb_fpath}")
+
+# List all feature classes in the current workspace
+fc_list = arcpy.ListFeatureClasses()
+print(f"Feature Classes in Workspace: {fc_list}")
+
+# Check out the Spatial Analyst extension (if required)
+arcpy.CheckOutExtension("Spatial")
+
+# Define the input shapefile and output shapefile paths
+input_shapefile = os.path.join(data_dir_path, "VEG_COMP_LYR_R1_POLY.shp")
+output_shapefile = os.path.join(data_dir_path, "AspenDom_2010_VRI.shp")
+
+# Specify the attribute field and value for filtering
+attribute_name = "FHF"  
+attribute_value = "ID6"
+
+# Create a SQL query to filter the features
+query = f"{attribute_name} = '{attribute_value}'"
+
+# Perform the selection and save it to a new shapefile
+arcpy.Select_analysis(in_features=input_shapefile, out_feature_class=output_shapefile, where_clause=query)
+
+print(f"Filtered polygons with {attribute_name} = {attribute_value} saved to {output_shapefile}.")
+
+# Open a search cursor to find features that match the criteria
+matching_features = []
+with arcpy.da.SearchCursor(input_shapefile, ["SHAPE@", attribute_name]) as search_cursor:
+    for row in search_cursor:
+        if row[1] == attribute_value:
+            matching_features.append(row[0])  # Store matching geometries
+
+# If matching features exist, create a new shapefile to store them
+if matching_features:
+    spatial_reference = arcpy.Describe(input_shapefile).spatialReference  # Get spatial reference
+
+    # Create a new feature class for filtered data
+    arcpy.CreateFeatureclass_management(
+        out_path=os.path.dirname(output_shapefile),
+        out_name=os.path.basename(output_shapefile),
+        geometry_type="POLYGON",
+        spatial_reference=spatial_reference,
+    )
+
+    # Add the attribute field to the new feature class
+    arcpy.AddField_management(output_shapefile, attribute_name, "TEXT")
+
+    # Insert matching features into the new shapefile
+    with arcpy.da.InsertCursor(output_shapefile, ["SHAPE@", attribute_name]) as insert_cursor:
+        for geometry in matching_features:
+            insert_cursor.insertRow((geometry, attribute_value))
+
+    print(f"Filtered features saved successfully to {output_shapefile}.")
+else:
+    print("No matching features found.")
+
+# Check in the 3D Analyst extension (if previously checked out)
+arcpy.CheckInExtension("3D")
+
+# Set scratch workspace as the current workspace
+arcpy.env.workspace = scratch_gdb_fpath
+print(f"Workspace set to scratch.gdb: {scratch_gdb_fpath}")
+
+# Ensure ArcPy can overwrite existing files
+arcpy.env.overwriteOutput = True
+
+# Define study area shapefile path
+study_area = os.path.join(data_dir_path, "study_area.shp")
+
+# Define output file for the intersection analysis
+output_intersect = os.path.join(data_dir_path, "2010_clipped_vri.shp")
+
+# Perform an intersection between vegetation data and study area boundaries
+arcpy.analysis.Intersect(["VEG_COMP_LYR_R1_POLY", study_area], output_intersect)
+
+print(f"Intersection analysis completed. Output saved to {output_intersect}.")
+```
+
+# R
+
+A key part of my disturbance ecology research involved collecting large datasets from multiple open-source databases over several years and matching them by location. To optimize processing time, I implemented loops to iterate through each year. This R script automates the process by matching fire-affected locations to the nearest climate data centroids within a 200-meter radius, filtering and saving the results for further climate and fire severity analysis.
+
+```         
+# Load required libraries
+library(dplyr)
+library(sf)
+library(terra)
+
+# Read centroid data
+centroids <- read.csv("Processing Data/Climate/PixellCentroidTable.csv")
+
+# Read fire data for 2012 and rename coordinate columns
+df2012 <- read.csv("Processing Data/df2012_aspendominant_fires.csv") %>%
+  rename(long = x, lat = y)
+
+# Round coordinates to 3 decimal places for better matching
+centroids <- centroids %>% mutate(long = round(long, 3), lat = round(lat, 3))
+df2012 <- df2012 %>% mutate(long = round(long, 3), lat = round(lat, 3))
+
+# Perform an inner join to keep only matching coordinates
+matched_df <- df2012 %>%
+  inner_join(centroids, by = c("long", "lat"))
+
+# Raster alignment: Resample raster2 to match raster1's grid and extent
+raster2_aligned <- resample(raster2, raster1, method = "bilinear")
+
+# Plot the original and aligned rasters for verification
+plot(raster1, main = "Raster 1")
+plot(raster2_aligned, main = "Aligned Raster 2")
+
+# Convert dataframes to spatial objects
+sf1 <- st_as_sf(df2012, coords = c("long", "lat"), crs = 4326)
+sf2 <- st_as_sf(centroids, coords = c("long", "lat"), crs = 4326)
+
+# Find nearest centroid within 200m
+nearest_indices <- st_nearest_feature(sf1, sf2)
+distances <- st_distance(sf1, sf2[nearest_indices, ], by_element = TRUE)
+
+# Keep only matches within 200m
+valid_matches <- which(as.numeric(distances) <= 200)
+matched_df <- centroids[nearest_indices[valid_matches], ]
+
+# Save output to CSV
+write.csv(matched_df, "matched_coordinates_within_200m.csv", row.names = FALSE)
+
+# ---- Process multiple years (2012-2020) ----
+years <- 2012:2020
+folder <- "C:/Users/sadiejsr.stu/OneDrive - UBC/Desktop/FCOR599/Processing Data/RFM Rasters/Processing"
+
+for (year in years) {
+  
+  # Load data dynamically based on year
+  df_path <- paste0(folder, "/df", year, "_aspendomfires.csv")  
+  df <- read.csv(df_path) %>%
+    rename(long = x, lat = y)
+  
+  # Convert to spatial points
+  sf_df <- st_as_sf(df, coords = c("long", "lat"), crs = 4326)
+  sf_centroids <- st_as_sf(centroids, coords = c("long", "lat"), crs = 4326)
+
+  # Find the nearest centroid within 200m
+  nearest_indices <- st_nearest_feature(sf_df, sf_centroids)
+  distances <- st_distance(sf_df, sf_centroids[nearest_indices, ], by_element = TRUE)
+
+  # Keep only matches within 200m
+  valid_matches <- which(as.numeric(distances) <= 200)
+  matched_df <- centroids[nearest_indices[valid_matches], ]
+
+  # Save output to CSV
+  output_path <- paste0(folder, "/climateinput_", year, ".csv")
+  write.csv(matched_df, output_path, row.names = FALSE)
+  
+  print(paste("Finished processing", year))  # Progress update
+}
+```
