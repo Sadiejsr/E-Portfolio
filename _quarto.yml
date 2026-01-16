@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: C:\Users\sadiejsr.stu\OneDrive - UBC\Documents\GitHub\E-Portfolio
+  output-dir: C:\Users\sadiejsr\Documents\GitHub\E-Portfolio
 
 website:
   title: "Sadie Russell"
@@ -16,6 +16,8 @@ website:
         text: Skills
       - href: fieldworkgallery.qmd
         text: Field Work Gallery
+        
+        
 
 
 format:

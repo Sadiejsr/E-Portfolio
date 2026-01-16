@@ -1,6 +1,6 @@
 ---
 title: "Sadie Russell"
-image: images/Sadie_ProfPhoto.jpg
+image: images/Sadie2025.jpg
 about:
   template: trestles
   image-width: 20em
